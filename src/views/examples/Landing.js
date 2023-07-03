@@ -1,20 +1,4 @@
-/*!
-
-=========================================================
-* Argon Design System React - v1.1.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
+ 
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
@@ -38,6 +22,7 @@ import {
 
 // core components
 import DemoNavbar from "components/Navbars/DemoNavbar.js";
+
 import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
@@ -56,7 +41,7 @@ class Landing extends React.Component {
         <DemoNavbar />
         <main ref="main">
           <div className="position-relative">
-            {/* shape Hero */}
+            
             <section className="section section-lg section-shaped pb-250">
               <div className="shape shape-style-1 shape-default">
                 <span />
@@ -74,16 +59,12 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        All your needs at one place{" "}
+                        <span> </span>
                       </h1>
-                      <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
-                      </p>
+                      
                       <div className="btn-wrapper">
-                        <Button
+                        {/* <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
                           href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
@@ -92,8 +73,8 @@ class Landing extends React.Component {
                             <i className="fa fa-code" />
                           </span>
                           <span className="btn-inner--text">Components</span>
-                        </Button>
-                        <Button
+                        </Button> */}
+                        {/* <Button
                           className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                           color="default"
                           href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
@@ -104,7 +85,7 @@ class Landing extends React.Component {
                           <span className="btn-inner--text">
                             Download React
                           </span>
-                        </Button>
+                        </Button> */}
                       </div>
                     </Col>
                   </Row>
@@ -138,15 +119,17 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                            <i className="ni ni-basket" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Download Argon
+                          Delicious Meals, Delivered Fast
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          Our food delivery service allows you to order your favorite meals
+                           from our menu with ease. You can browse and select your items, 
+                           and we will connect you with our best delivery partners in your area. 
+                       
+
                           </p>
                           <div>
                             <Badge color="primary" pill className="mr-1">
@@ -174,15 +157,13 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
+                            <i className="ni ni-briefcase-24" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                            Build Something
+                          Hire the Best Talent
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          Our hiring platform connects businesses with qualified candidates who have the skills and experience needed, whether for a full-time or part-time position. 
                           </p>
                           <div>
                             <Badge color="success" pill className="mr-1">
@@ -210,15 +191,15 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
+                            <i className="ni ni-cart" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                          Virtual Storefront
                           </h6>
                           <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
+                          Shop from home with ease on our online store. 
+                          Discover a wide range of products including clothing, 
+                          accessories, electronics, and home goods. 
                           </p>
                           <div>
                             <Badge color="warning" pill className="mr-1">
@@ -262,11 +243,15 @@ class Landing extends React.Component {
                     <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
-                    <h3>Awesome features</h3>
+                    <h3>About Sui</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                    Sui is not just another blockchain, 
+                    it's a groundbreaking innovation that challenges the traditional
+                    concept of asset ownership. By leveraging the power of decentralization, 
+                    Sui offers a new level of transparency, security, and efficiency that 
+                    has never been seen before in the world of blockchain. With Sui, 
+                    asset ownership becomes more than just a concept, 
+                    it becomes a reality that is accessible to everyone.
                     </p>
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
@@ -324,7 +309,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section bg-secondary">
+          {/* <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col md="6">
@@ -482,7 +467,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+             
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -498,8 +483,8 @@ class Landing extends React.Component {
                 />
               </svg>
             </div>
-          </section>
-          <section className="section section-lg">
+          </section> */}
+          {/* <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -684,8 +669,8 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <section className="section section-lg pt-0">
+          </section> */}
+          {/* <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
                 <div className="p-5">
@@ -715,8 +700,8 @@ class Landing extends React.Component {
                 </div>
               </Card>
             </Container>
-          </section>
-          <section className="section section-lg bg-gradient-default">
+          </section> */}
+          {/* <section className="section section-lg bg-gradient-default">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
@@ -762,7 +747,7 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-            {/* SVG separator */}
+             
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -861,10 +846,10 @@ class Landing extends React.Component {
                 </Col>
               </Row>
             </Container>
-          </section>
-          <Download />
+          </section> */}
+          {/* <Download /> */}
         </main>
-        <CardsFooter />
+        {/* <CardsFooter /> */}
       </>
     );
   }
