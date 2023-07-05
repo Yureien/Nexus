@@ -151,11 +151,11 @@ class Landing extends React.Component {
                                                         href="/food"
                                                     // onClick={(e) => e.preventDefault()}
                                                     >
-                                                        {/* <Link to="/listing/food" style={{ color: "white" }}> */}
-                                                        {/* <a href="https://pizzahut.co.in/menu/pizzas" style={{color: "white"}}> */}
-                                                        Learn more
-                                                        {/* </a> */}
-                                                        {/* </Link> */}
+                                                     <Link to="/food" style={{ color: "white" }}>
+                              {/* <a href="https://pizzahut.co.in/menu/pizzas" style={{color: "white"}}> */}
+                              Learn more
+                              {/* </a> */}
+                            </Link>
                                                     </Button>
                                                 </CardBody>
                                             </Card>
