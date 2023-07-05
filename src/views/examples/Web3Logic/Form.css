@@ -1,0 +1,19 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.input-field {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

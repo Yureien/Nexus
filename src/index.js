@@ -11,13 +11,14 @@ import Landing from "views/examples/Landing.js";
 import Login from "views/examples/Login.js";
 import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
-
+import App from "./views/examples/Web3Logic/MainApp.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/landing-page" element={<Landing />} />
+      <Route path="/main-app" element={<App />} />
       <Route path="/login-page" element={<Login />} />
       <Route path="/profile-page" element={<Profile />} />
       <Route path="/register-page" element={<Register />} />
