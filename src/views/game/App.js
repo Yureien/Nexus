@@ -3,10 +3,12 @@ import { ConnectButton } from "@suiet/wallet-kit";
 import { Unity, useUnityContext } from "react-unity-webgl";
 
 const App = () => {
-  const { unityProvider } = useUnityContext({
-    loaderUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.loader.js",
+  const { unityProvider, loadingProgression, isLoaded } = useUnityContext({
+    loaderUrl:
+      "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.loader.js",
     dataUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.data",
-    frameworkUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.framework.js",
+    frameworkUrl:
+      "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.framework.js",
     codeUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.wasm",
   });
 
@@ -15,6 +17,9 @@ const App = () => {
       <header>
         <ConnectButton />
       </header>
+      {!isLoaded && (
+        <p>Loading Game... {Math.round(loadingProgression * 100)}%</p>
+      )}
       <Unity
         unityProvider={unityProvider}
         style={{ width: "100vw", height: "90vh" }}
