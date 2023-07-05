@@ -241,79 +241,81 @@ class Landing extends React.Component {
                     </section>
                     <section className="section section-lg">
                         <Container>
-                            <Row className="row-grid align-items-center">
-                                <Col className="order-md-2" md="6">
-                                    <img
-                                        alt="..."
-                                        className="img-fluid floating"
-                                        src={require("assets/img/theme/promo-1.png")}
-                                    />
-                                </Col>
-                                <Col className="order-md-1" md="6">
-                                    <div className="pr-md-5">
-                                        <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                                            <i className="ni ni-settings-gear-65" />
-                                        </div>
-                                        <h3>About Nexus</h3>
-                                        <p>
+                            <div className="info-tab">
+                                <Row className="row-grid align-items-center">
+                                    <Col className="order-md-2" md="6">
+                                        <img
+                                            alt="..."
+                                            className="img-fluid floating"
+                                            src={require("assets/img/theme/promo-1.png")}
+                                        />
+                                    </Col>
+                                    <Col className="order-md-1" md="6">
+                                        <div className="pr-md-5">
+                                            <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                                                <i className="ni ni-settings-gear-65" />
+                                            </div>
+                                            <h3>About Nexus</h3>
+                                            <p>
                                             /// Content about Nexus ///
-                                        </p>
-                                        <ul className="list-unstyled mt-5">
-                                            <li className="py-2">
-                                                <div className="d-flex align-items-center">
-                                                    <div>
-                                                        <Badge
-                                                            className="badge-circle mr-3"
-                                                            color="success"
-                                                        >
-                                                            <i className="ni ni-settings-gear-65" />
-                                                        </Badge>
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="mb-0">
-                                                            /// Point about Nexus ///
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li className="py-2">
-                                                <div className="d-flex align-items-center">
-                                                    <div>
-                                                        <Badge
-                                                            className="badge-circle mr-3"
-                                                            color="success"
+                                            </p>
+                                            <ul className="list-unstyled mt-5">
+                                                <li className="py-2">
+                                                    <div className="d-flex align-items-center">
+                                                        <div>
+                                                            <Badge
+                                                                className="badge-circle mr-3"
+                                                                color="success"
                                                             >
-                                                            <i className="ni ni-html5" />
-                                                        </Badge>
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="mb-0">
+                                                                <i className="ni ni-settings-gear-65" />
+                                                            </Badge>
+                                                        </div>
+                                                        <div>
+                                                            <h6 className="mb-0">
                                                             /// Point about Nexus ///
-                                                        </h6>
+                                                            </h6>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                            <li className="py-2">
-                                                <div className="d-flex align-items-center">
-                                                    <div>
-                                                        <Badge
-                                                            className="badge-circle mr-3"
-                                                            color="success"
+                                                </li>
+                                                <li className="py-2">
+                                                    <div className="d-flex align-items-center">
+                                                        <div>
+                                                            <Badge
+                                                                className="badge-circle mr-3"
+                                                                color="success"
                                                             >
-                                                            <i className="ni ni-satisfied" />
-                                                        </Badge>
-                                                    </div>
-                                                    <div>
-                                                        <h6 className="mb-0">
+                                                                <i className="ni ni-html5" />
+                                                            </Badge>
+                                                        </div>
+                                                        <div>
+                                                            <h6 className="mb-0">
                                                             /// Point about Nexus ///
-                                                        </h6>
+                                                            </h6>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </Col>
-                            </Row>
+                                                </li>
+                                                <li className="py-2">
+                                                    <div className="d-flex align-items-center">
+                                                        <div>
+                                                            <Badge
+                                                                className="badge-circle mr-3"
+                                                                color="success"
+                                                            >
+                                                                <i className="ni ni-satisfied" />
+                                                            </Badge>
+                                                        </div>
+                                                        <div>
+                                                            <h6 className="mb-0">
+                                                            /// Point about Nexus ///
+                                                            </h6>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
                         </Container>
                     </section>
                     {/* <section className="section bg-secondary">
@@ -855,7 +857,7 @@ class Landing extends React.Component {
             </Container>
           </section> */}
                     {/* <Download /> */}
-                </main>
+                </main >
                 {/* <CardsFooter /> */}
             </>
         );

@@ -28,14 +28,30 @@ background: linear-gradient(45deg, rgba(255,5,172,1) 0%, rgba(255,5,172,1) 18%, 
     background: linear-gradient(45deg, rgba(255,5,172,1) 0%, rgba(255,5,172,1) 18%, rgba(0,255,255,1) 100%); /* w3c */
   }
 
-  .glow-card::after:hover, .glow-card::before:hover {
-    
+  .glow-card:hover {
+    color: white;
+    transition: background ease-in-out ;
   }
 
   .glow-card {
     background-color: black;
+    min-height: 100%;
+  }
+
+  .description {
+    min-height: 143px;
   }
 
   .glow-card:hover {
     background-color: black !important;
+  }
+
+  .info-tab {
+    background-color: black;
+    color: white;
+    padding: 100px;
+  }
+
+  .info-tab h3, .info-tab h6 {
+    color: white;
   }
