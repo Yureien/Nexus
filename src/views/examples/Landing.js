@@ -147,11 +147,11 @@ class Landing extends React.Component {
                             href="/food"
                             // onClick={(e) => e.preventDefault()}
                           >
-                            {/* <Link to="/listing/food" style={{ color: "white" }}> */}
-                            {/* <a href="https://pizzahut.co.in/menu/pizzas" style={{color: "white"}}> */}
-                            Learn more
-                            {/* </a> */}
-                            {/* </Link> */}
+                            <Link to="/food" style={{ color: "white" }}>
+                              {/* <a href="https://pizzahut.co.in/menu/pizzas" style={{color: "white"}}> */}
+                              Learn more
+                              {/* </a> */}
+                            </Link>
                           </Button>
                         </CardBody>
                       </Card>
@@ -227,6 +227,7 @@ class Landing extends React.Component {
                             className="mt-4"
                             color="warning"
                             href="https://iwanpiza.s3.ap-south-1.amazonaws.com/phase2.png"
+                            onClick={(e) => e.preventDefault()}
                           >
                             Learn more
                           </Button>
