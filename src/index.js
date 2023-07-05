@@ -13,6 +13,7 @@ import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 import App from "./views/examples/Web3Logic/MainApp.js";
 import Food from "./views/pizzahouse/App.js";
+import Game from "./views/game/App.js";
 import Game2 from "./views/game2/App.js";
 
 import { SuiDevnetChain, WalletProvider } from "@suiet/wallet-kit";
