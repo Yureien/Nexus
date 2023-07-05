@@ -1,24 +1,23 @@
-
 import React from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 // nodejs library that concatenates classes
 import classnames from "classnames";
 
 // reactstrap components
 import {
-    Badge,
-    Button,
-    Card,
-    CardBody,
-    CardImg,
-    FormGroup,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
-    Container,
-    Row,
-    Col,
+  Badge,
+  Button,
+  Card,
+  CardBody,
+  CardImg,
+  FormGroup,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  Container,
+  Row,
+  Col,
 } from "reactstrap";
 
 // core components
@@ -32,42 +31,40 @@ import "../../assets/css/landing.css";
 import Download from "../IndexSections/Download.js";
 
 class Landing extends React.Component {
-    state = {};
-    componentDidMount() {
-        document.documentElement.scrollTop = 0;
-        document.scrollingElement.scrollTop = 0;
-        this.refs.main.scrollTop = 0;
-    }
-    render() {
-        return (
-            <>
-                <DemoNavbar />
-                <main ref="main" className="main">
-                    <div className="position-relative">
+  state = {};
+  componentDidMount() {
+    document.documentElement.scrollTop = 0;
+    document.scrollingElement.scrollTop = 0;
+    this.refs.main.scrollTop = 0;
+  }
+  render() {
+    return (
+      <>
+        <DemoNavbar />
+        <main ref="main" className="main">
+          <div className="position-relative">
+            <section className="section section-lg section-shaped pb-250">
+              <div className="shape shape-style-1 shape-default">
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+                <span />
+              </div>
+              <Container className="py-lg-md d-flex">
+                <div className="col px-0">
+                  <Row>
+                    <Col lg="6">
+                      <h1 className="display-3 main-heading text-white">
+                        All your needs at one place <span> </span>
+                      </h1>
 
-                        <section className="section section-lg section-shaped pb-250">
-                            <div className="shape shape-style-1 shape-default">
-                                <span />
-                                <span />
-                                <span />
-                                <span />
-                                <span />
-                                <span />
-                                <span />
-                                <span />
-                                <span />
-                            </div>
-                            <Container className="py-lg-md d-flex">
-                                <div className="col px-0">
-                                    <Row>
-                                        <Col lg="6">
-                                            <h1 className="display-3 main-heading text-white">
-                                                All your needs at one place{" "}
-                                                <span> </span>
-                                            </h1>
-
-                                            <div className="btn-wrapper">
-                                                {/* <Button
+                      <div className="btn-wrapper">
+                        {/* <Button
                           className="btn-icon mb-3 mb-sm-0"
                           color="info"
                           href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
@@ -77,7 +74,7 @@ class Landing extends React.Component {
                           </span>
                           <span className="btn-inner--text">Components</span>
                         </Button> */}
-                                                {/* <Button
+                        {/* <Button
                           className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                           color="default"
                           href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
@@ -89,13 +86,13 @@ class Landing extends React.Component {
                             Download React
                           </span>
                         </Button> */}
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Container>
-                            {/* SVG separator */}
-                            {/* <div className="separator separator-bottom separator-skew">
+                      </div>
+                    </Col>
+                  </Row>
+                </div>
+              </Container>
+              {/* SVG separator */}
+              {/* <div className="separator separator-bottom separator-skew">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     preserveAspectRatio="none"
@@ -110,234 +107,230 @@ class Landing extends React.Component {
                                     />
                                 </svg>
                             </div> */}
-                        </section>
-                        {/* 1st Hero Variation */}
-                    </div>
-                    <section className="section section-lg pt-lg-0 mt--200">
-                        <Container>
-                            <Row className="justify-content-center">
-                                <Col lg="12">
-                                    <Row className="row-grid">
-                                        <Col lg="4">
-                                            <Card className="glow-card card-lift--hover shadow border-0">
-                                                <CardBody className="py-5">
-                                                    <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                                                        <i className="ni ni-basket" />
-                                                    </div>
-                                                    <h6 className="text-primary text-uppercase">
-                                                        Delicious Meals, Delivered Fast
-                                                    </h6>
-                                                    <p className="description mt-3">
-                                                        Our food delivery service allows you to order your favorite meals
-                                                        from our menu with ease. You can browse and select your items,
-                                                        and we will connect you with our best delivery partners in your area.
-
-
-                                                    </p>
-                                                    <div>
-                                                        <Badge color="primary" pill className="mr-1">
-                                                            design
-                                                        </Badge>
-                                                        <Badge color="primary" pill className="mr-1">
-                                                            system
-                                                        </Badge>
-                                                        <Badge color="primary" pill className="mr-1">
-                                                            creative
-                                                        </Badge>
-                                                    </div>
-                                                    <Button
-                                                        className="mt-4"
-                                                        color="primary"
-                                                        href="/food"
-                                                    // onClick={(e) => e.preventDefault()}
-                                                    >
-                                                     <Link to="/food" style={{ color: "white" }}>
-                              {/* <a href="https://pizzahut.co.in/menu/pizzas" style={{color: "white"}}> */}
+            </section>
+            {/* 1st Hero Variation */}
+          </div>
+          <section className="section section-lg pt-lg-0 mt--200">
+            <Container>
+              <Row className="justify-content-center">
+                <Col lg="12">
+                  <Row className="row-grid">
+                    <Col lg="4">
+                      <Card className="glow-card card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                            <i className="ni ni-basket" />
+                          </div>
+                          <h6 className="text-primary text-uppercase">
+                            Delicious Meals, Delivered Fast
+                          </h6>
+                          <p className="description mt-3">
+                            Our food delivery service allows you to order your
+                            favorite meals from our menu with ease. You can
+                            browse and select your items, and we will connect
+                            you with our best delivery partners in your area.
+                          </p>
+                          <div>
+                            <Badge color="primary" pill className="mr-1">
+                              design
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              system
+                            </Badge>
+                            <Badge color="primary" pill className="mr-1">
+                              creative
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="primary"
+                            href="/food"
+                            // onClick={(e) => e.preventDefault()}
+                          >
+                            {/* <Link to="/listing/food" style={{ color: "white" }}> */}
+                            {/* <a href="https://pizzahut.co.in/menu/pizzas" style={{color: "white"}}> */}
+                            Learn more
+                            {/* </a> */}
+                            {/* </Link> */}
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="glow-card card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                            <i className="ni ni-briefcase-24" />
+                          </div>
+                          <h6 className="text-success text-uppercase">
+                            Hire the Best Talent
+                          </h6>
+                          <p className="description mt-3">
+                            Our hiring platform connects businesses with
+                            qualified candidates who have the skills and
+                            experience needed, whether for a full-time or
+                            part-time position.
+                          </p>
+                          <div>
+                            <Badge color="success" pill className="mr-1">
+                              business
+                            </Badge>
+                            <Badge color="success" pill className="mr-1">
+                              vision
+                            </Badge>
+                            <Badge color="success" pill className="mr-1">
+                              success
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="success"
+                            href="#pablo"
+                            onClick={(e) => e.preventDefault()}
+                          >
+                            <Link
+                              to="/listing/product"
+                              style={{ color: "white" }}
+                            >
                               Learn more
-                              {/* </a> */}
                             </Link>
-                                                    </Button>
-                                                </CardBody>
-                                            </Card>
-                                        </Col>
-                                        <Col lg="4">
-                                            <Card className="glow-card card-lift--hover shadow border-0">
-                                                <CardBody className="py-5">
-                                                    <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                                                        <i className="ni ni-briefcase-24" />
-                                                    </div>
-                                                    <h6 className="text-success text-uppercase">
-                                                        Hire the Best Talent
-                                                    </h6>
-                                                    <p className="description mt-3">
-                                                        Our hiring platform connects businesses with qualified candidates who have the skills and experience needed, whether for a full-time or part-time position.
-                                                    </p>
-                                                    <div>
-                                                        <Badge color="success" pill className="mr-1">
-                                                            business
-                                                        </Badge>
-                                                        <Badge color="success" pill className="mr-1">
-                                                            vision
-                                                        </Badge>
-                                                        <Badge color="success" pill className="mr-1">
-                                                            success
-                                                        </Badge>
-                                                    </div>
-                                                    <Button
-                                                        className="mt-4"
-                                                        color="success"
-                                                        href="#pablo"
-                                                        onClick={(e) => e.preventDefault()}
-                                                    >
-                                                        <Link to="/listing/product" style={{ color: "white" }}>
-                                                            Learn more
-                                                        </Link>
-                                                    </Button>
-                                                </CardBody>
-                                            </Card>
-                                        </Col>
-                                        <Col lg="4">
-                                            <Card className="glow-card card-lift--hover shadow border-0">
-                                                <CardBody className="py-5">
-                                                    <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                                                        <i className="ni ni-cart" />
-                                                    </div>
-                                                    <h6 className="text-warning text-uppercase">
-                                                        Virtual Storefront
-                                                    </h6>
-                                                    <p className="description mt-3">
-                                                        Shop from home with ease on our online store.
-                                                        Discover a wide range of products including clothing,
-                                                        accessories, electronics, and home goods.
-                                                    </p>
-                                                    <div>
-                                                        <Badge color="warning" pill className="mr-1">
-                                                            marketing
-                                                        </Badge>
-                                                        <Badge color="warning" pill className="mr-1">
-                                                            product
-                                                        </Badge>
-                                                        <Badge color="warning" pill className="mr-1">
-                                                            launch
-                                                        </Badge>
-                                                    </div>
-                                                    <Button
-                                                        className="mt-4"
-                                                        color="warning"
-                                                        href="#pablo"
-                                                        onClick={(e) => e.preventDefault()}
-                                                    >
-                                                        {/* <Link to="/listing/work" style={{ color: "white" }}> */}
-                                                        Learn more
-                                                        {/* </Link> */}
-                                                    </Button>
-                                                </CardBody>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                </Col>
-                            </Row>
-                        </Container>
-                    </section>
-                    <section className="section section-lg">
-                        <Container>
-                            <div className="info-tab">
-                                <Row className="row-grid align-items-center">
-                                    <Col className="order-md-2" md="6">
-                                        <img
-                                            alt="..."
-                                            className="img-fluid floating"
-                                            src={require("assets/img/theme/promo-1.png")}
-                                        />
-                                    </Col>
-                                    <Col className="order-md-1" md="6">
-                                        <div className="pr-md-5">
-                                            <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                                                <i className="ni ni-settings-gear-65" />
-                                            </div>
-                                            <h3>About Nexus</h3>
-                                            <p>
-                                           The nexus is the one and only super application required
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                    <Col lg="4">
+                      <Card className="glow-card card-lift--hover shadow border-0">
+                        <CardBody className="py-5">
+                          <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
+                            <i className="ni ni-cart" />
+                          </div>
+                          <h6 className="text-warning text-uppercase">
+                            Virtual Storefront
+                          </h6>
+                          <p className="description mt-3">
+                            Shop from home with ease on our online store.
+                            Discover a wide range of products including
+                            clothing, accessories, electronics, and home goods.
+                          </p>
+                          <div>
+                            <Badge color="warning" pill className="mr-1">
+                              marketing
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              product
+                            </Badge>
+                            <Badge color="warning" pill className="mr-1">
+                              launch
+                            </Badge>
+                          </div>
+                          <Button
+                            className="mt-4"
+                            color="warning"
+                            href="https://iwanpiza.s3.ap-south-1.amazonaws.com/phase2.png"
+                          >
+                            Learn more
+                          </Button>
+                        </CardBody>
+                      </Card>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </Container>
+          </section>
+          <section className="section section-lg">
+            <Container>
+              <div className="info-tab">
+                <Row className="row-grid align-items-center">
+                  <Col className="order-md-2" md="6">
+                    <img
+                      alt="..."
+                      className="img-fluid floating"
+                      src={require("assets/img/theme/promo-1.png")}
+                    />
+                  </Col>
+                  <Col className="order-md-1" md="6">
+                    <div className="pr-md-5">
+                      <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+                        <i className="ni ni-settings-gear-65" />
+                      </div>
+                      <h3>About Nexus</h3>
+                      <p>
+                        The nexus is the one and only super application required
                         by individuals and businesses to showcase, buy, sell
                         services and products, safely and securely, powered by
                         Sui
-                                            </p>
-                                            <ul className="list-unstyled mt-5">
-                                                <li className="py-2">
-                                                    <div className="d-flex align-items-center">
-                                                        <div>
-                                                            <Badge
-                                                                className="badge-circle mr-3"
-                                                                color="success"
-                                                            >
-                                                                <i className="ni ni-settings-gear-65" />
-                                                            </Badge>
-                                                        </div>
-                                                        <div>
-                                                            <h6 className="mb-0">
-                                                            cheaper and faster in terms of transactions
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li className="py-2">
-                                                    <div className="d-flex align-items-center">
-                                                        <div>
-                                                            <Badge
-                                                                className="badge-circle mr-3"
-                                                                color="success"
-                                                            >
-                                                                <i className="ni ni-html5" />
-                                                            </Badge>
-                                                        </div>
-                                                        <div>
-                                                            <h6 className="mb-0">
-                                                          Escrow-based Account
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li className="py-2">
-                                                    <div className="d-flex align-items-center">
-                                                        <div>
-                                                            <Badge
-                                                                className="badge-circle mr-3"
-                                                                color="success"
-                                                            >
-                                                                <i className="ni ni-satisfied" />
-                                                            </Badge>
-                                                        </div>
-                                                        <div>
-                                                            <h6 className="mb-0">
-                                                           Nft utility
-                                                            </h6>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </Col>
-                                </Row>
+                      </p>
+                      <ul className="list-unstyled mt-5">
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                              >
+                                <i className="ni ni-settings-gear-65" />
+                              </Badge>
                             </div>
-                        </Container>
-                        <Container style={{marginTop: "75px", textAlign: "center"}}>
-                            <div className="info-tab">
-                                <Row className="row-grid align-items-center">
-                                    <Col>
-                                        <div className="pr-md-5">
-                                            <h3>Become the part of NEXUS DAO</h3>
-                                        </div>
-                                        <div>
-                                            <p>
-                                              Unlock exciting discounts and earning benefits
-                                            </p>
-                                        </div>
-                                    </Col>
-                                </Row>
+                            <div>
+                              <h6 className="mb-0">
+                                cheaper and faster in terms of transactions
+                              </h6>
                             </div>
-                        </Container>
-                    </section>
-                    {/* <section className="section bg-secondary">
+                          </div>
+                        </li>
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                              >
+                                <i className="ni ni-html5" />
+                              </Badge>
+                            </div>
+                            <div>
+                              <h6 className="mb-0">Escrow-based Account</h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="py-2">
+                          <div className="d-flex align-items-center">
+                            <div>
+                              <Badge
+                                className="badge-circle mr-3"
+                                color="success"
+                              >
+                                <i className="ni ni-satisfied" />
+                              </Badge>
+                            </div>
+                            <div>
+                              <h6 className="mb-0">Nft utility</h6>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </Container>
+            <Container style={{ marginTop: "75px", textAlign: "center" }}>
+              <div className="info-tab">
+                <Row className="row-grid align-items-center">
+                  <Col>
+                    <div className="pr-md-5">
+                      <h3>Become the part of NEXUS DAO</h3>
+                    </div>
+                    <div>
+                      <p>Unlock exciting discounts and earning benefits</p>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </Container>
+          </section>
+          {/* <section className="section bg-secondary">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col md="6">
@@ -512,7 +505,7 @@ class Landing extends React.Component {
               </svg>
             </div>
           </section> */}
-                    {/* <section className="section section-lg">
+          {/* <section className="section section-lg">
             <Container>
               <Row className="justify-content-center text-center mb-lg">
                 <Col lg="8">
@@ -698,7 +691,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section> */}
-                    {/* <section className="section section-lg pt-0">
+          {/* <section className="section section-lg pt-0">
             <Container>
               <Card className="bg-gradient-warning shadow-lg border-0">
                 <div className="p-5">
@@ -729,7 +722,7 @@ class Landing extends React.Component {
               </Card>
             </Container>
           </section> */}
-                    {/* <section className="section section-lg bg-gradient-default">
+          {/* <section className="section section-lg bg-gradient-default">
             <Container className="pt-lg pb-300">
               <Row className="text-center justify-content-center">
                 <Col lg="10">
@@ -875,12 +868,12 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section> */}
-                    {/* <Download /> */}
-                </main >
-                {/* <CardsFooter /> */}
-            </>
-        );
-    }
+          {/* <Download /> */}
+        </main>
+        {/* <CardsFooter /> */}
+      </>
+    );
+  }
 }
 
 export default Landing;

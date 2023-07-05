@@ -1,0 +1,12 @@
+[package]
+name = "contract"
+version = "0.0.1"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet" }
+
+[addresses]
+contract = "0x0"
+# ph = "0xf0001c2165bc5541a3943468d0051c33ce4439933be00b8967c5f086d60ba8a7"
+# phob = "0x16d8e3676c9200f5c4d4d8747dd4216a7e6993f72593d64e9bf738f8aba5d5fd"
+# nft = "0x84275684bdd0a712b82056271b7e468503465237513ccb6bf318f0eee9b90c6d"
