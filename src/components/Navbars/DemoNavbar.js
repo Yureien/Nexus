@@ -189,6 +189,7 @@ class DemoNavbar extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>
+                <a href="/game">Game</a>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   {/* <NavItem>
                     <NavLink
