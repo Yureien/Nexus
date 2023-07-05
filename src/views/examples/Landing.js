@@ -61,7 +61,7 @@ class Landing extends React.Component {
                                 <div className="col px-0">
                                     <Row>
                                         <Col lg="6">
-                                            <h1 className="display-3 text-white">
+                                            <h1 className="display-3 main-heading text-white">
                                                 All your needs at one place{" "}
                                                 <span> </span>
                                             </h1>
@@ -312,6 +312,22 @@ class Landing extends React.Component {
                                                     </div>
                                                 </li>
                                             </ul>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </Container>
+                        <Container style={{marginTop: "75px", textAlign: "center"}}>
+                            <div className="info-tab">
+                                <Row className="row-grid align-items-center">
+                                    <Col>
+                                        <div className="pr-md-5">
+                                            <h3>What is Nexus and DAO?</h3>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                /// Some Content ///
+                                            </p>
                                         </div>
                                     </Col>
                                 </Row>
