@@ -227,7 +227,6 @@ class Landing extends React.Component {
                             className="mt-4"
                             color="warning"
                             href="https://iwanpiza.s3.ap-south-1.amazonaws.com/phase2.png"
-                            onClick={(e) => e.preventDefault()}
                           >
                             Learn more
                           </Button>
