@@ -257,7 +257,10 @@ class Landing extends React.Component {
                                             </div>
                                             <h3>About Nexus</h3>
                                             <p>
-                                            /// Content about Nexus ///
+                                           The nexus is the one and only super application required
+                        by individuals and businesses to showcase, buy, sell
+                        services and products, safely and securely, powered by
+                        Sui
                                             </p>
                                             <ul className="list-unstyled mt-5">
                                                 <li className="py-2">
@@ -272,7 +275,7 @@ class Landing extends React.Component {
                                                         </div>
                                                         <div>
                                                             <h6 className="mb-0">
-                                                            /// Point about Nexus ///
+                                                            cheaper and faster in terms of transactions
                                                             </h6>
                                                         </div>
                                                     </div>
@@ -289,7 +292,7 @@ class Landing extends React.Component {
                                                         </div>
                                                         <div>
                                                             <h6 className="mb-0">
-                                                            /// Point about Nexus ///
+                                                          Escrow-based Account
                                                             </h6>
                                                         </div>
                                                     </div>
@@ -306,7 +309,7 @@ class Landing extends React.Component {
                                                         </div>
                                                         <div>
                                                             <h6 className="mb-0">
-                                                            /// Point about Nexus ///
+                                                           Nft utility
                                                             </h6>
                                                         </div>
                                                     </div>
@@ -322,11 +325,11 @@ class Landing extends React.Component {
                                 <Row className="row-grid align-items-center">
                                     <Col>
                                         <div className="pr-md-5">
-                                            <h3>What is Nexus and DAO?</h3>
+                                            <h3>Become the part of NEXUS DAO</h3>
                                         </div>
                                         <div>
                                             <p>
-                                                /// Some Content ///
+                                              Unlock exciting discounts and earning benefits
                                             </p>
                                         </div>
                                     </Col>
