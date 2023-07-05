@@ -148,7 +148,7 @@ class Landing extends React.Component {
                                                     <Button
                                                         className="mt-4"
                                                         color="primary"
-                                                        href="https://pizzahut.co.in/menu/pizzas"
+                                                        href="/food"
                                                     // onClick={(e) => e.preventDefault()}
                                                     >
                                                         {/* <Link to="/listing/food" style={{ color: "white" }}> */}

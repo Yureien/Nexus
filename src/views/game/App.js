@@ -4,10 +4,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 const App = () => {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "argon-design-system-react/game/buildss.loader.js",
-    dataUrl: "argon-design-system-react/game/buildss.data",
-    frameworkUrl: "argon-design-system-react/game/buildss.framework.js",
-    codeUrl: "argon-design-system-react/game/buildss.wasm",
+    loaderUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.loader.js",
+    dataUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.data",
+    frameworkUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.framework.js",
+    codeUrl: "https://iwanpiza.s3.ap-south-1.amazonaws.com/game1/buildss.wasm",
   });
 
   return (
