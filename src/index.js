@@ -1,6 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import ReactDOM from "react-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/font-awesome/css/font-awesome.min.css";
@@ -13,27 +13,51 @@ import Profile from "views/examples/Profile.js";
 import Register from "views/examples/Register.js";
 import App from "./views/examples/Web3Logic/MainApp.js";
 import Food from "./views/pizzahouse/App.js";
+import Game from "./views/game/App.js";
 
 import { SuiDevnetChain, WalletProvider } from "@suiet/wallet-kit";
 import "@suiet/wallet-kit/style.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const router = createBrowserRouter([
+  {
+    path: "/game",
+    element: <Game />,
+  },
+  {
+    path: "/landing",
+    element: <Landing />,
+  },
+  {
+    path: "/main-app",
+    element: <App />,
+  },
+  {
+    path: "/login-page",
+    element: <Login />,
+  },
+  {
+    path: "/profile-page",
+    element: <Profile />,
+  },
+  {
+    path: "/register-page",
+    element: <Register />,
+  },
+  {
+    path: "/food",
+    element: <Food />,
+  },
+  {
+    path: "/",
+    element: <Landing />,
+  },
+]);
 
-root.render(
-  <WalletProvider chains={[SuiDevnetChain]}>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/landing-page" element={<Landing />} />
-        <Route path="/main-app" element={<App />} />
-        <Route path="/login-page" element={<Login />} />
-        <Route path="/profile-page" element={<Profile />} />
-        <Route path="/register-page" element={<Register />} />
-        <Route path="/food" element={<Food />} />
-        {/* <Route path="/listing/food" element={<>Hello World</>} /> */}
-        {/* <Route path="/" element={<Navigate to="/landing-page" replace />} /> */}
-        {/* <Route path="*" element={<Navigate to="/landing-page" replace />} /> */}
-        {/* Set the default route to /landing-page */}
-      </Routes>
-    </BrowserRouter>
-  </WalletProvider>
+ReactDOM.render(
+  <React.StrictMode>
+    <WalletProvider chains={[SuiDevnetChain]}>
+      <RouterProvider router={router} />
+    </WalletProvider>
+  </React.StrictMode>,
+  document.getElementById("root")
 );
