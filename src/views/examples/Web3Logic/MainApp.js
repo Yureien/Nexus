@@ -6,7 +6,7 @@ import { TransactionBlock } from "@mysten/sui.js";
 import Form from "./Form";
 import DemoNavbar from "components/Navbars/DemoNavbar";
 
-function createListingTxnBlock(/*x*/) {
+function createListingTxnBlock(x) {
   //need to transfer time in days and convert it here
   // define a programmable transaction block
   const txb = new TransactionBlock();
@@ -17,8 +17,8 @@ function createListingTxnBlock(/*x*/) {
   const contractModule = "advertisement";
   const contractMethod = "create";
 
-  const duration_ms = 12000;
-  const fee = 12000 * 300 + 10000;
+  const duration_ms = x;
+  const fee = duration_ms * 300 + 10000;
   console.log("hey");
   const [coin] = txb.splitCoins(txb.gas, [txb.pure(fee)]);
   console.log("hey");
@@ -44,13 +44,13 @@ function createListingTxnBlock(/*x*/) {
 function App() {
   const wallet = useWallet();
 
-  async function handleFormSubmit() {
+  async function handleFormSubmit(formData) {
     console.log("hey0");
 
     if (!wallet.connected) return;
 
     console.log("hey1");
-    const txb = createListingTxnBlock(/*formData.duration_ms*/);
+    const txb = createListingTxnBlock(12000);
     console.log("hey2");
     // call the wallet to sign and execute the transaction
     const res = await wallet.signAndExecuteTransactionBlock({
