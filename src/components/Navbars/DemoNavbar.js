@@ -75,7 +75,7 @@ class DemoNavbar extends React.Component {
               <NavbarBrand className="mr-lg-5" to="/landing-page" tag={Link}>
                 <img
                   alt="..."
-                  src={require("assets/img/brand/image (7).png")}
+                  src={require("assets/img/brand/nexus.jpg")}
                 />
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
@@ -94,7 +94,7 @@ class DemoNavbar extends React.Component {
                       <Link to="/">
                         <img
                           alt="..."
-                          src={require("assets/img/brand/argon-react.png")}
+                          src={require("assets/img/brand/nexus.jpg")}
                         />
                       </Link>
                     </Col>
@@ -268,6 +268,20 @@ class DemoNavbar extends React.Component {
                       </span>
                       <span className="nav-link-inner--text ml-1">
                         Login
+                      </span>
+                    </Button>
+                  </NavItem>
+                  <NavItem className="d-none d-lg-block ml-lg-4">
+                    <Button
+                      className="btn-neutral btn-icon"
+                      color="default"
+                      href="/login-page"
+                    >
+                      <span className="btn-inner--icon">
+                        <i className="fa fa-book mr-2" />
+                      </span>
+                      <span className="nav-link-inner--text ml-1">
+                        Add Product
                       </span>
                     </Button>
                   </NavItem>

@@ -21,7 +21,8 @@ root.render(
       <Route path="/login-page" element={<Login />} />
       <Route path="/profile-page" element={<Profile />} />
       <Route path="/register-page" element={<Register />} />
-      <Route path="*" element={<Navigate to="/landing-page" replace />} />
+      {/* <Route path="/listing/food" element={<>Hello World</>} /> */}
+      <Route path="/" element={<Navigate to="/landing-page" replace />} />
       {/* Set the default route to /landing-page */}
     </Routes>
   </BrowserRouter>

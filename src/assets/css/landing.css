@@ -1,0 +1,41 @@
+.main {
+    background: linear-gradient(150deg, #000000 15%, #33001a 70%, #660033 94%);
+}
+
+.glow-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -1;
+
+background: linear-gradient(45deg, rgba(255,5,172,1) 0%, rgba(255,5,172,1) 18%, rgba(0,255,255,1) 100%); /* w3c */
+  }
+  
+.glow-card::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: white;
+    z-index: -2;
+    filter: blur(40px);
+    background: linear-gradient(45deg, rgba(255,5,172,1) 0%, rgba(255,5,172,1) 18%, rgba(0,255,255,1) 100%); /* w3c */
+  }
+
+  .glow-card::after:hover, .glow-card::before:hover {
+    
+  }
+
+  .glow-card {
+    background-color: black;
+  }
+
+  .glow-card:hover {
+    background-color: black !important;
+  }
