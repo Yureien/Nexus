@@ -13,7 +13,7 @@ function createListingTxnBlock(x) {
 
   // contract address might be wrong
   const contractAddress =
-    "0x4bf85e1981fd08fccf09d93f1337197df89abd186a79504925fc422f4c091acb";
+    "0x82613c2bf880f38e1627fb090fa22b24e8c74503dc6ae3017b2413786a2a9c2c";
   const contractModule = "advertisement";
   const contractMethod = "create";
 

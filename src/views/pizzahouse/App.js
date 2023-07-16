@@ -16,9 +16,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 export const CONTRACT_PACKAGE =
-  "0xf0001c2165bc5541a3943468d0051c33ce4439933be00b8967c5f086d60ba8a7";
+  "0x82613c2bf880f38e1627fb090fa22b24e8c74503dc6ae3017b2413786a2a9c2c";
 export const CONTRACT_DATA_OBJECT =
-  "0x16d8e3676c9200f5c4d4d8747dd4216a7e6993f72593d64e9bf738f8aba5d5fd";
+  "0xb54efb75c8829d5048feaa7df9c40d4d82ddeb15b8a6f7f176a1c0dafafec0f9";
 export const PIZZA_MODULE = "pizzahouse";
 export const NFT_AMOUNT = 4 * 100000000;
 
