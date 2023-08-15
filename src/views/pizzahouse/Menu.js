@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import item1 from "./images/item-1.jpeg";
 import item2 from "./images/item-2.jpeg";
 import item3 from "./images/item-3.jpeg";
@@ -33,11 +34,11 @@ const Menu = ({ items, onClick }) => {
             <img src={imagesMap[img]} alt={title} className="photo" />
             <div className="item-info">
               <header>
-                <h4>{title}</h4>
+                <h3>{title}</h3>
                 <h4 className="price">
                   {price} SUI
-                  <button onClick={() => onClick(title)}>Buy now</button>
                 </h4>
+                  <button onClick={() => onClick(title)} className="yelloBtn">Order now</button>
               </header>
               <p className="item-text">{desc}</p>
             </div>

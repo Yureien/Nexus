@@ -146,12 +146,16 @@ const App = () => {
       )}
       <section className="menu section">
         <div className="title">
-          <img src={logo} alt="logo" className="logo" />
-          <ConnectButton />
-          <h2>Menu List</h2>
-          <div className="underline"></div>
+          <h2>Nexus <span>Foodie</span>.</h2>
+          <div className="header-right">
+            <ConnectButton className="yelloBtn">
+            </ConnectButton>
+            <button onClick={handleYourKartClick} className="yelloBtn">Your Kart</button>
+          </div>
+
         </div>
-        <button onClick={handleYourKartClick}>YourKart</button>
+        {/* <div className="underline"></div> */}
+
         <Categories
           categories={categories}
           activeCategory={activeCategory}
